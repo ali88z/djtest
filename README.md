@@ -1,0 +1,2 @@
+# djtest
+django test
