@@ -23,6 +23,8 @@ class DetailView(generic.DetailView):
 
 class ResultsView(generic.DetailView):
     model = Question
+    # 这行加不加都可以，Tutorial里说原因是因为Model就是Question
+    context_object_name = 'question'
     template_name = 'polls/results.html'
 
 def vote(request, question_id):
