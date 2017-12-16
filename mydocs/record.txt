@@ -1,0 +1,11 @@
+apach2+mod_wsgi部署:
+安装软件
+    sudo apt-get install apache2
+    sudo apt-get install libapache2-mod-wsgi
+修改/home/cnt/djtest/mysite/mysite/wsgi.py，注意里面有部分内容是因为安装了miniconda2导致找不到Django相关库才添加
+配置Apache
+    在/etc/apache2/sites-available里添加mysite.conf，内容需要根据实际情况修改
+    a2ensite mysite  #mysite需要根据上面的配置文件名修改
+    service apache2 restart或service apache2 reload
+打开网页
+    http://192.168.1.188/polls/
