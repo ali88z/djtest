@@ -1,4 +1,5 @@
 apach2+mod_wsgi部署:
+参考https://code.ziqiangxuetang.com/django/django-deploy.html
 安装软件
     sudo apt-get install apache2
     sudo apt-get install libapache2-mod-wsgi
@@ -9,3 +10,5 @@ apach2+mod_wsgi部署:
     service apache2 restart或service apache2 reload
 打开网页
     http://192.168.1.188/polls/
+
+Django 部署(Nginx)参考https://code.ziqiangxuetang.com/django/django-nginx-deploy.html
